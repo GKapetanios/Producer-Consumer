@@ -71,6 +71,15 @@ public class ProducerServiceImpl implements ProducerService {
         return producer;
     }
 
+    /**
+     * Method that produces new tasks.
+     * A producer is passed as parameter in this method.
+     * The method initially checks whether the queue has available space for new tasks.
+     * If no avaialbles space exists the producer is put to sleep for 3 seconds and then checks again.
+     * If there is avaialble space the producer produces a new task and sends the task to the RabbitMQ queue.
+     *
+     * @param producer The producer which will produce tasks
+     */
     private void produceTasks(Producer producer) {
         while (true) {
             try {
