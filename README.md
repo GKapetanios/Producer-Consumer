@@ -21,10 +21,15 @@ Response type: JSON
 Example response: `[{"id": "692f457b-679c-48aa-ba33-b493cd0c7a77", "name": "Wolverine"}, {"id": "243b78be-8e32-485e-a056-0de66a40fc77", "name": "Cyclops"}]`
 
 `POST /producers`
+
 Description: This API call creates a new producer
+
 Example body: `[{"name": "Wolverine"}]`
+
 Response code: 200
+
 Response type: JSON
+
 Example response: `[{"id": "692f457b-679c-48aa-ba33-b493cd0c7a77", "name": "Wolverine"}]`
 
 ## How to Deploy/Run the Project
@@ -55,6 +60,7 @@ Example response: `[{"id": "692f457b-679c-48aa-ba33-b493cd0c7a77", "name": "Wolv
  3. Execute the following command to run the project `mvnw spring-boot:run`
 
 **Monitoring the Project**
+
 You can use the Xavier's service console log to see actions of the producers.
 
 You can use the Magneto's service console log to see the actions of the consumer.
